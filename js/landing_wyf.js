@@ -70,7 +70,7 @@ window.onload = function() {
         } else {
             head.style.height = 104 + "px";
             add.style.top = 37 + "px";
-            head.style.backgroundColor = "#ffaa0000";
+            head.style.backgroundColor = "#FBF8F2";
         }
     }
     //相机定格字的延时

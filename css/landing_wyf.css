@@ -156,7 +156,7 @@
 }
 
 #head {
-    background-color: #ffaa0000;
+    /* background-color: #FBF8F2; */
     width: 100%;
     height: 104px;
     position: fixed;
@@ -207,6 +207,7 @@
 }
 
 #ren {
+    cursor: pointer;
     width: 34px;
     height: 34px;
     border: 1.5px solid #824c3957;

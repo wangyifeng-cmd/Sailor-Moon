@@ -148,10 +148,10 @@ window.onload = function() {
     var information_div = wyf$("information_div");
     setInterval(function() {}, 1000);
     setInterval(function() {
-        if (window.pageYOffset > 60 && window.pageYOffset < 450) {
+        if (window.pageYOffset > 90 && window.pageYOffset < 800) {
             information_div.style.top = 0 + "px";
             information_div.style.opacity = 1;
-        } else if (window.pageYOffset > 450 && window.pageYOffset < 1200) {
+        } else if (window.pageYOffset > 800 && window.pageYOffset < 1700) {
             event.style.top = 90 + "px";
             event.style.opacity = 1;
         }
@@ -164,7 +164,7 @@ window.onload = function() {
         element.timeId = setInterval(function() {
             var current = element.offsetLeft;
             //控制平移的快慢
-            var step = 1;
+            var step = 5;
             //判断当前位置和目标位置的关系从而决定正反方向平移
             step = current < target ? step : -step;
             //每一次走一步
@@ -223,21 +223,126 @@ window.onload = function() {
         //three中的left下拉变为flex布局停住
     var education_left_content_float = wyf$("education_left_content_float");
     setInterval(function() {
-        if (window.pageYOffset > 2800 && window.pageYOffset < 6460) {
+        if (window.pageYOffset > 2840 && window.pageYOffset < 6205) {
             education_left_content_float.style.position = "fixed";
             education_left_content_float.style.top = 125 + "px";
             education_left_content_float.style.left = 85 + "px";
-        } else if (window.pageYOffset < 2800) {
+        } else if (window.pageYOffset < 2840) {
             education_left_content_float.style.position = "absolute";
             education_left_content_float.style.top = 0 + "px";
             education_left_content_float.style.left = 0 + "px";
-        } else if (window.pageYOffset > 6460) {
+        } else if (window.pageYOffset > 6205) {
             education_left_content_float.style.position = "absolute";
-            education_left_content_float.style.top = 3630 + "px";
+            education_left_content_float.style.top = 3350 + "px";
             education_left_content_float.style.left = 0 + "px";
         }
     }, 1);
+    //窗帘
+    var empty_left = wyf$("empty_left");
+    var empty_right = wyf$("empty_right");
     setInterval(function() {
-        console.log(window.pageYOffset);
-    }, 500);
+        if (window.pageYOffset < 1983) {
+            empty_left.style.position = "absolute";
+            empty_left.style.top = 0 + "px";
+            empty_right.style.position = "absolute";
+            empty_right.style.top = 0 + "px";
+
+        } else if (window.pageYOffset > 1983 && window.pageYOffset < 6205) {
+            empty_left.style.position = "fixed";
+            empty_left.style.top = 75 + "px";
+            empty_right.style.position = "fixed";
+            empty_right.style.top = 75 + "px";
+        } else {
+            empty_left.style.position = "absolute";
+            empty_left.style.top = 4200 + "px";
+            empty_right.style.position = "absolute";
+            empty_right.style.top = 4200 + "px";
+        }
+    }, 1);
+    //家长学堂中的选择栏
+    var education_left_content_float = wyf$("education_left_content_float");
+    var education_left_liObjs = education_left_content_float.getElementsByTagName("li");
+    // console.log(education_left_liObjs);
+    for (let i = 0; i < education_left_liObjs.length; i++) {
+        education_left_liObjs[i].onclick = function() {
+            for (let j = 0; j < education_left_liObjs.length; j++) {
+                education_left_liObjs[j].className = "";
+            }
+            this.className = "education_current";
+        }
+    }
+    //随滚轮向下划，左边的列表随着匹配
+    setInterval(function() {
+        if (window.pageYOffset > 2553 && window.pageYOffset < 3153) {
+            for (let i = 0; i < education_left_liObjs.length; i++) {
+                for (let j = 0; j < education_left_liObjs.length; j++) {
+                    education_left_liObjs[j].className = "";
+                }
+                education_left_liObjs[0].className = "education_current";
+            }
+        } else if (window.pageYOffset > 3253 && window.pageYOffset < 3953) {
+            for (let i = 0; i < education_left_liObjs.length; i++) {
+                for (let j = 0; j < education_left_liObjs.length; j++) {
+                    education_left_liObjs[j].className = "";
+                }
+                education_left_liObjs[1].className = "education_current";
+            }
+        } else if (window.pageYOffset > 4153 && window.pageYOffset < 4853) {
+            for (let i = 0; i < education_left_liObjs.length; i++) {
+                for (let j = 0; j < education_left_liObjs.length; j++) {
+                    education_left_liObjs[j].className = "";
+                }
+                education_left_liObjs[2].className = "education_current";
+            }
+        } else if (window.pageYOffset > 5053 && window.pageYOffset < 5653) {
+            for (let i = 0; i < education_left_liObjs.length; i++) {
+                for (let j = 0; j < education_left_liObjs.length; j++) {
+                    education_left_liObjs[j].className = "";
+                }
+                education_left_liObjs[3].className = "education_current";
+            }
+        } else if (window.pageYOffset > 5853 && window.pageYOffset < 6453) {
+            for (let i = 0; i < education_left_liObjs.length; i++) {
+                for (let j = 0; j < education_left_liObjs.length; j++) {
+                    education_left_liObjs[j].className = "";
+                }
+                education_left_liObjs[4].className = "education_current";
+            }
+        }
+    }, 1);
+    //切换背景
+    var wallpaper1 = wyf$("wallpaper1");
+    var wallpaper2 = wyf$("wallpaper2");
+    setInterval(function() {
+        if (window.pageYOffset < 7200) {
+            wallpaper1.style.zIndex = -6;
+        } else if (window.pageYOffset > 7200 && window.pageYOffset < 8896) {
+            wallpaper1.style.zIndex = -8;
+        }
+    }, 1);
+    //学费的模糊
+    var four_center_left = wyf$("four_center_left");
+    var four_div = four_center_left.getElementsByTagName("div");
+    var four_listObjs = four_center_left.getElementsByTagName("span");
+    for (let i = 0; i < four_div.length; i++) {
+        four_div[i].onmouseover = function() {
+            four_listObjs[i].style.filter = "blur(0px)";
+            this.style.backgroundColor = "#00000020";
+        }
+        four_div[i].onmouseout = function() {
+            four_listObjs[i].style.filter = "blur(8px)";
+            this.style.backgroundColor = "#00000000";
+        }
+    }
+    //最下面的右边栏的延时线
+    var five_class = document.getElementsByClassName("five_class");
+    var five_before = document.getElementsByClassName("five_before");
+    for (let i = 0; i < five_class.length; i++) {
+        five_class[i].onmouseover = function() {
+            five_before[i].style.width = "100%";
+        }
+        five_class[i].onmouseout = function() {
+            five_before[i].style.width = "0%";
+        }
+    }
 }

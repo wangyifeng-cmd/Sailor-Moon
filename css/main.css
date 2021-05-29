@@ -28,6 +28,23 @@
     src: url("../字体/SortsMillGoudy-Regular.ttf");
 }
 
+@font-face {
+    font-family: "tangyuan";
+    src: url("../字体/落落汤圆.ttf");
+}
+
+@font-face {
+    font-family: "bottom";
+    src: url("../字体/Montserrat.ttf");
+}
+
+@font-face {
+    font-family: "Nein";
+    src: url(../字体/Nein-Beta-Extrabold.woff) format("woff");
+    font-weight: 800;
+    font-style: normal
+}
+
 #add {
     user-select: none;
     color: #824C39;
@@ -212,6 +229,7 @@
 }
 
 #ren {
+    cursor: pointer;
     width: 34px;
     height: 34px;
     border: 1.5px solid #824c3957;
@@ -319,7 +337,7 @@
 }
 
 #main {
-    font-family: "萌";
+    font-family: "tangyuan";
     background-color: #FBF8F2;
     /* mix-blend-mode: difference; */
     /*background-image: url("../image/咚0.jpg");
@@ -339,8 +357,8 @@
 #text_5 {
     opacity: 0;
     font-size: 2.5vh;
-    color: #79acb9;
-    mix-blend-mode: difference;
+    color: #a16c59;
+    /* mix-blend-mode: difference; */
     z-index: 1;
     position: absolute;
     writing-mode: tb-rl;
@@ -369,10 +387,10 @@
 #text_1 {
     opacity: 0;
     font-size: 4vh;
-    color: #79acb9;
+    color: #a16c59;
     top: 40%;
     left: 4%;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     z-index: 1;
     position: absolute;
     writing-mode: tb-rl;
@@ -626,7 +644,7 @@
 }
 
 .next_page:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #397541;
 }
 
 #infor2 {
@@ -691,6 +709,13 @@
     -o-transition: 2s;
 }
 
+#home {
+    position: absolute;
+    bottom: 0px;
+    right: 180px;
+    height: 90%;
+}
+
 #event_head {
     position: relative;
     /* background-color: rgb(255, 170, 170); */
@@ -747,11 +772,11 @@
 }
 
 .next_page_left:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #397541;
 }
 
 .next_page_right:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #397541;
 }
 
 #event_list_width {
@@ -904,30 +929,32 @@
 }
 
 #event_other_div:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #397541;
 }
 
 #three {
     position: relative;
     background-color: #ffffff00;
     width: 100%;
-    height: 5300px;
+    height: 5000px;
 }
 
 .empty {
-    width: 100px;
+    width: 200px;
     height: auto;
     position: absolute;
 }
 
 #empty_left {
+    position: absolute;
     top: 0px;
-    left: 10px;
+    left: 0px;
 }
 
 #empty_right {
+    position: absolute;
     top: 0px;
-    right: 10px;
+    right: 0px;
 }
 
 
@@ -951,7 +978,7 @@
 
 .education_top {
     width: 100%;
-    height: 900px;
+    height: 800px;
 }
 
 
@@ -965,16 +992,64 @@
 }
 
 #education_left_content_float {
+    box-sizing: border-box;
+    padding: 25px 40px 40px 40px;
     position: absolute;
     top: 0px;
     background-color: rgb(255, 255, 255);
     width: 413.33px;
     height: 600px;
+    letter-spacing: 2px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+#education_left_content_float>h3 {
+    color: #414141;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#education_left_content_float>ul>li {
+    color: #8f8f8f;
+    border-left: 3.5px solid #8f8f8f;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#education_left_content_float>ul>li>a>span {
+    color: #8f8f8f;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+#parent {
+    color: #397541 !important;
+}
+
+.education_left_member {
+    font-size: 1.8rem;
+    font-family: member;
+}
+
+.education_left_text {
+    font-size: 1.4rem;
+}
+
+.education_current {
+    border-color: #065415 !important;
+}
+
+.education_current>a>span {
+    color: #065415 !important;
 }
 
 #education_right {
@@ -987,7 +1062,7 @@
 /* 右边第一个 */
 
 .education_right_content {
-    box-shadow: 0 0 30px 0px rgb(163, 163, 163);
+    box-shadow: 0 0 50px 0px rgb(163, 163, 163);
     background-color: rgb(255, 255, 255);
     width: 100%;
     /* height: 830px; */
@@ -999,6 +1074,23 @@
     -o-border-radius: 20px;
 }
 
+.education_right_content>img {
+    position: relative;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.education_right_content>img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
 .education_right_content_text {
     margin: 30px 40px;
 }
@@ -1006,7 +1098,7 @@
 .education_mem {
     margin-right: 10px;
     font-size: 45px;
-    color: #824c39;
+    color: #065415;
     font-family: member;
     vertical-align: middle;
     line-height: 26px;
@@ -1029,15 +1121,333 @@
 
 .middle {
     width: 100%;
-    height: 100px;
+    height: 80px;
+}
+
+.middle_left {
+    width: 100%;
+    height: 30px;
+}
+
+#four_top {
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0), #FBF8F2);
+    width: 100%;
+    height: 120px;
 }
 
 #four {
     position: relative;
-    background-color: #000000;
+    background-color: #FBF8F2;
     width: 100%;
-    height: 840px;
+    height: 950px;
+    padding-top: 70px;
 }
+
+#four_title {
+    color: #397541;
+    font-size: 150px;
+    text-align: center;
+    font-family: Nein;
+    padding-bottom: 60px;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+#four_contain {
+    width: 100%;
+    height: 550px;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#four_center {
+    width: 77%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#four_center>div {
+    width: 50%;
+    height: 100%;
+}
+
+#four_center_left {
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: #FCB768;
+}
+
+#four_center_left>div {
+    /* user-select: none; */
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: #00000000;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    color: #397541;
+    font-size: 30px;
+    line-height: 50px;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+#four_center_left>div>span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+#four_center_view {
+    text-align: center;
+    line-height: 48px;
+    width: 90px;
+    height: 48px;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    color: #ffffff;
+    background-color: #ff9a28;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+#four_center_view:hover {
+    color: #ff9a28;
+    background-color: #ffffff;
+}
+
+#four_center_right {
+    background: url("../image/萌娃绿.jpg") no-repeat center/cover;
+}
+
+#four_bottom {
+    font-family: inherit;
+    padding: 60px 0 0 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#four_bottom_text {
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    color: #397541;
+    border-bottom: 1px solid #397541;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+#four_bottom_text:hover {
+    color: #ff9a28;
+    border-bottom: 1px solid #ff9a28;
+}
+
+#five {
+    position: relative;
+    background-color: #000000c4;
+    width: 100%;
+    height: 725px;
+    overflow: hidden;
+}
+
+#five_top {
+    width: 100%;
+    height: 90%;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #00000000;
+    display: flex;
+    justify-content: space-between;
+}
+
+#five_top_left {
+    /* background-color: #fcb76893; */
+    position: relative;
+    /* border-right: 1px solid #fff; */
+    width: 35%;
+    height: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* justify-content: space-around; */
+}
+
+#five_top_logo {
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 28%;
+    right: 7%;
+    /* position: relative; */
+    /* top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px; */
+    /* margin: auto 25px auto auto; */
+}
+
+#five_top_logo_img {
+    width: 300px;
+    height: auto;
+}
+
+#five_top_right {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#five_top_right_contain {
+    box-sizing: border-box;
+    padding-top: 40px;
+    width: 70%;
+    height: 66%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#five_special_left {
+    /* background-color: #fff; */
+}
+
+.five_class {
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 30px;
+    height: 17%;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+}
+
+.five_class:hover {
+    color: #646464;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.five_before {
+    position: absolute;
+    /*width: 100%;
+    */
+    width: 0%;
+    height: 1px;
+    left: 0px;
+    bottom: -1px;
+    background-color: #4b4b4b;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.five_special_head {
+    letter-spacing: 1.5px;
+    font-family: special;
+    line-height: 130%;
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+
+.five_special_body {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.five_special_btn {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    padding: 2px 4px;
+    border: 1px solid #ffffff;
+    padding: auto 5px;
+    height: 24px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.five_special_btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#five_special_right {
+    /* background-color: #fff; */
+}
+
+#five_top_right_contain>div {
+    width: 48%;
+    height: 100%;
+}
+
+#five_bottom {
+    border-top: 1px solid #fff;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 30px; */
+}
+
+#five_bottom>span {
+    font-size: 13px;
+    color: #fff;
+    font-family: special;
+    /* mix-blend-mode: difference; */
+}
+
+
+/* #six {
+    position: relative;
+    background: #2f394700;
+    width: 100%;
+    height: 60px;
+} */
+
+
+/* /////////////////////////////////////////// */
 
 #wallpaper1 {
     position: fixed;
@@ -1045,18 +1455,28 @@
     left: 0px;
     width: 100vw;
     height: 100vh;
-    background: url(../image/幼儿园地图.png) no-repeat center/cover;
-    /* background-color: rgb(189, 89, 89); */
+    background: url(../image/幼儿园地图5.png) no-repeat center/1200px;
+    background-color: #FBF8F2;
     z-index: -6;
 }
 
-#wallpaper1 {
+#wallpaper2 {
     position: fixed;
-    top: 0px;
+    top: 75px;
     left: 0px;
     width: 100vw;
     height: 100vh;
-    background: url(../image/幼儿园地图.png) no-repeat center/cover;
-    /* background-color: rgb(189, 89, 89); */
+    /* background: linear-gradient( 223deg, #4E503A 0%, #0E495F 100%); */
+    /* background: url(../image/幼儿园地图3.png) no-repeat center/cover; */
+    /* background-color: #bd5959; */
     z-index: -7;
+}
+
+#video {
+    /* mix-blend-mode: difference; */
+    position: absolute;
+    width: 114vw;
+    height: auto;
+    top: 0px;
+    left: 0px;
 }

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幼儿园</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/record_lzh.css">
+    <script src="./js/publick.js"></script>
+    <script src="./js/record_lzh.js"></script>
+    <script src="js/echarts.min.js"></script>
+
+</head>
+
+<body>
+    <div id="special">
+        <div id="special_center">
+            <div id="special_l">
+                <a href="#" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Information</span>
+                        <br>
+                        <span class="special_body">公告</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Class Activities</span><br>
+                        <span class="special_body">班级活动</span>
+                    </div>
+                </a>
+                <a href="record_lzh.html" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Baby Record</span><br>
+                        <span class="special_body">宝宝记录</span>
+                    </div>
+                </a>
+                <a href="recipes_lxy2.html" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Recipes</span><br>
+                        <span class="special_body">食谱</span>
+                    </div>
+                </a>
+            </div>
+            <div id="special_r">
+                <a href="landing_wyf.html" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">landing</span>
+                        <br>
+                        <span class="special_body">登陆</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <a href="#" class="special_btn">Author event</a>
+                        <a href="#" class="special_btn">Kimono event</a>
+                        <br>
+                        <span style="line-height: 30px;">#作者美少女壮士</span>
+                    </div>
+                </a>
+                <a href="AskForLeave_czm.html" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Leave</span><br>
+                        <span class="special_body">请假</span>
+                    </div>
+                </a>
+                </a>
+                <a href="#">
+                    <div id="after">
+                        <a href="#" class="special_btn" style="color: white;background-color: black;">External</a>
+                        <span id="author">Copyright / © 2021美少女壮士 / All Rights Reserved.</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="add">
+        <span id="shu">|</span>
+        <span id="heng">|</span>
+    </div>
+    <div id="head">
+        <div id="img">
+            <a href="main_wyf.html"><img src="./image/logo1.png" alt="" id="logo"></a>
+        </div>
+        <ul id="ul">
+            <li><a href="#"><span><div class = "change"></div>关于我们</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>关于花园</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>入院信息</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>公告</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>常见问题</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>联系我们</span></a></li>
+            <li>
+                <div id="ren">
+                    <a href="./landing_wyf.html" id="landing">
+                        <svg id="account" viewBox="0 0 24 24">
+                        <path d="M0 22.032v1.968h24v-1.968c0-1.812-1.38-3.298-4.12-4.454-2.311-1.095-5.021-1.735-7.88-1.735s-5.569 0.64-7.994 1.784l0.114-0.048c-2.74 1.154-4.12 2.64-4.12 4.454v0zM18 6c0-0.024 0.001-0.053 0.001-0.082 0-3.359-2.723-6.082-6.082-6.082s-6.082 2.723-6.082 6.082c0 3.359 2.723 6.082 6.082 6.082 1.68 0 3.201-0.681 4.301-1.782l0-0c1.098-1.057 1.78-2.539 1.78-4.181 0-0.013-0-0.026-0-0.039v0.002z"></path>
+                    </svg>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 个人 -->
+    <div id="content">
+        <div class="imformation">
+            <div class="imformation_insert">
+                <div class="imformation_name">
+                    <img src="image/宝宝.png" width="35px" height="35px" />
+                    <div style="
+                margin-left: 15px;
+                height: 100%;
+                text-align: center;
+                font-size: 24px;
+                letter-spacing: 5px;
+                font-weight: bold;
+              ">
+                        王译锋
+                    </div>
+                </div>
+                <!-- 目录 第一个 获奖记录 -->
+                <div class="imformation_buttons">
+                    <a href="#" onclick="change_div('hjxx')"></a>
+                    <div style="width: 80px; height: 100%"></div>
+                    <img src="image/记录.png" alt="" height="28px" height="28px" />
+
+                    <div id="leave_book" cursor:pointer>
+                        <input type="button" value="获奖记录" v-on:click="ShowRecord" style="border: 0px; background-color: #fff; letter-spacing: 5px" />
+                    </div>
+                </div>
+                <!-- 分隔占位 -->
+                <div style="
+              width: 70%;
+              height: 1px;
+              background-color: #bdc3c7;
+              position: absolute;
+              top: 100px;
+              left: 50px;
+            "></div>
+                <!-- 目录 第二个 宝宝相册 -->
+                <div class="imformation_buttons">
+                    <a href="#" onclick="change_div('gsywly')"></a>
+                    <div style="width: 80px; height: 100%"></div>
+                    <img src="image/记录.png" alt="" height="28px" height="28px" />
+
+                    <div id="leave_book" cursor:pointer>
+                        <input type="button" value="宝宝相册" v-on:click="ShowPhoto" style="border: 0px; background-color: #fff; letter-spacing: 5px" />
+                    </div>
+                </div>
+                <!-- 分隔占位 -->
+                <div style="
+              width: 70%;
+              height: 1px;
+              background-color: #bdc3c7;
+              position: absolute;
+              top: 150px;
+              left: 50px;
+            "></div>
+                <!-- 目录 第三个 健康档案 -->
+                <div class="imformation_buttons">
+                    <a href="#" onclick="change_div('gsywly')"></a>
+                    <div style="width: 80px; height: 100%"></div>
+                    <img src="image/记录.png" alt="" height="28px" height="28px" />
+
+                    <div id="leave_book" cursor:pointer>
+                        <input type="button" value="健康档案" v-on:click="ShowHealth" style="border: 0px; background-color: #fff; letter-spacing: 5px" />
+                    </div>
+                </div>
+                <!-- 分隔占位 -->
+                <div style="
+              width: 70%;
+              height: 1px;
+              background-color: #bdc3c7;
+              position: absolute;
+              top: 200px;
+              left: 50px;
+            "></div>
+                <!-- 目录 第四个 疫苗档案 -->
+                <div class="imformation_buttons">
+                    <a href="#" onclick="change_div('gsywly')"></a>
+                    <div style="width: 80px; height: 100%"></div>
+                    <img src="image/记录.png" alt="" height="28px" height="28px" />
+
+                    <div id="leave_book" cursor:pointer>
+                        <input type="button" value="疫苗档案" v-on:click="ShowVaccine" style="border: 0px; background-color: #fff; letter-spacing: 5px" />
+                    </div>
+                </div>
+                <!-- 分隔占位 -->
+                <div style="
+              width: 70%;
+              height: 1px;
+              background-color: #bdc3c7;
+              position: absolute;
+              top: 250px;
+              left: 50px;
+            "></div>
+            </div>
+        </div>
+        <div class="newAskForLeave">
+            <!-- 获奖记录 -->
+            <div id="winningRecord" v-show="isShowRecord">
+                <div class="display_leave_title">
+                    <img src="image/获奖.png" alt="" width="37px" height="37px" />
+                    <div class="display_leave_title_text">获奖记录</div>
+                    <select style="margin-right: 20px">
+              <option value="2020-2021学年度第二学期">
+                2020-2021学年度第二学期
+              </option>
+              <option value="2020-2021学年度第一学期">
+                2020-2021学年度第一学期
+              </option>
+              <option value="2019-2020学年度第二学期">
+                2019-2020学年度第二学期
+              </option>
+              <option value="2019-2020学年度第一学期">
+                2019-2020学年度第一学期
+              </option>
+            </select>
+                    <select style="margin-right: 20px">
+              <option value="全部周次">全部周次</option>
+              <option value="第一周">第一周</option>
+              <option value="第二周">第二周</option>
+              <option value="第三周">第三周</option>
+            </select>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: #bdc3c7"></div>
+
+                <div style="height: 40%; width: 100%">
+                    <div style="
+                width: 100px;
+                height: 60px;
+                box-shadow: 1px 1px 5px 1px rgba(176, 176, 176, 1);
+                border-radius: 10px 10px 10px 10px;
+                background-color: white;
+                margin: 20px 0 0 60px;
+                text-align: center;
+                line-height: 60px;
+                letter-spacing: 1px;
+                display: inline-block;
+              ">
+                        每周之星
+                    </div>
+
+                    <div style="
+                width: 100px;
+                height: 60px;
+                box-shadow: 1px 1px 5px 1px rgba(176, 176, 176, 1);
+                border-radius: 10px 10px 10px 10px;
+                background-color: white;
+                margin: 20px 0 0 60px;
+                text-align: center;
+                line-height: 60px;
+                letter-spacing: 1px;
+                display: inline-block;
+              ">
+                        每周之星
+                    </div>
+
+                    <div style="
+                width: 100px;
+                height: 60px;
+                box-shadow: 1px 1px 5px 1px rgba(176, 176, 176, 1);
+                border-radius: 10px 10px 10px 10px;
+                background-color: white;
+                margin: 20px 0 0 60px;
+                text-align: center;
+                line-height: 60px;
+                letter-spacing: 1px;
+                display: inline-block;
+              ">
+                        每周之星
+                    </div>
+                </div>
+                <div style="
+              width: 90%;
+              height: 1px;
+              background-color: #bdc3c7;
+              margin: 0 auto;
+            "></div>
+
+                <div style="height: 40%; width: 100%">
+                    <div style="margin: 20px 0 0 60px; display: inline-block;">
+                        <img src="image/flower.png" />
+                    </div>
+                    <div style="margin: 20px 0 0 20px; display: inline-block;">
+                        <img src="image/flower.png" />
+                    </div>
+                    <div style="margin: 20px 0 0 20px; display: inline-block;">
+                        <img src="image/flower.png" />
+                    </div>
+                    <div style="margin: 20px 0 0 20px; display: inline-block;">
+                        <img src="image/flower.png" />
+                    </div>
+                </div>
+                <div class="paging">
+                    <a href="" class="pageBtn">上一页</a>
+                    <a href="" class="a_number">1</a>
+                    <a href="" class="a_number">2</a>
+                    <a href="" class="select">3</a>
+                    <a href="" class="a_number">4</a>
+                    <a href="" class="a_number">5</a>
+                    <a href="" class="a_number">6</a>
+                    <a href="" class="a_number">7</a>
+                    <a href="" class="a_number">8</a>
+                    <a href="" class="a_number">9</a>
+                    <a href="" class="pageBtn">下一页</a>
+                </div>
+            </div>
+            <!-- 宝宝相册 -->
+
+            <div id="photoAlbum" v-show="isShowPhoto">
+                <div class="display_leave_title">
+                    <img src="image/相册.png" alt="" width="37px" height="37px" />
+                    <div class="display_leave_title_text">宝宝相册</div>
+                    <select style="margin-right: 20px">
+              <option value="2020-2021学年度第二学期">
+                2020-2021学年度第二学期
+              </option>
+              <option value="2020-2021学年度第一学期">
+                2020-2021学年度第一学期
+              </option>
+              <option value="2019-2020学年度第二学期">
+                2019-2020学年度第二学期
+              </option>
+              <option value="2019-2020学年度第一学期">
+                2019-2020学年度第一学期
+              </option>
+            </select>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: #bdc3c7"></div>
+                <div style="width: 80%; height: 70%; margin: 30px  auto 0  auto;font-size: 0; box-shadow: 10px 10px 5px 2px rgba(184, 184, 184, 0.36);">
+                    <img src="image/萌1.jpg" style="width: 50%; height: 100%; background-color: yellow; float: right;">
+                    <img src="image/萌2.jpg" style="width: 25%; height: 50%; background-color: tomato; display: inline-block;">
+                    <img src="image/萌3.jpg" style="width: 25%; height: 50%; background-color: tomato; display: inline-block;">
+                    <img src="image/萌4.jpg" style="width: 50%; height: 50%; background-color: teal;">
+                </div>
+                <div class="paging" style="margin-top: 30px;">
+                    <a href="" class="pageBtn">上一页</a>
+                    <a href="" class="a_number">1</a>
+                    <a href="" class="a_number">2</a>
+                    <a href="" class="select">3</a>
+                    <a href="" class="a_number">4</a>
+                    <a href="" class="a_number">5</a>
+                    <a href="" class="a_number">6</a>
+                    <a href="" class="a_number">7</a>
+                    <a href="" class="a_number">8</a>
+                    <a href="" class="a_number">9</a>
+                    <a href="" class="pageBtn">下一页</a>
+                </div>
+            </div>
+            <!-- 健康档案 -->
+
+            <div id="healthRecords" v-show="isShowHealth">
+                <div class="display_leave_title">
+                    <img src="image/运动.png" alt="" width="37px" height="37px" />
+                    <div class="display_leave_title_text">健康档案</div>
+                    <select style="margin-right: 20px">
+                      <option value="2020-2021学年度第二学期">
+                        2020-2021学年度第二学期
+                      </option>
+                      <option value="2020-2021学年度第一学期">
+                        2020-2021学年度第一学期
+                      </option>
+                      <option value="2019-2020学年度第二学期">
+                        2019-2020学年度第二学期
+                      </option>
+                      <option value="2019-2020学年度第一学期">
+                        2019-2020学年度第一学期
+                      </option>
+                    </select>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: #bdc3c7"></div>
+                <form style="margin-top: 20px; margin-left: 50px;padding: 10px 10px 20px 20px;">
+                    身高:
+                    <input type="text" name="身高" value="" style="margin-right: 10px;margin-left: 10px;"> 体重:
+                    <input type="text" name="体重" value="" style="margin-right: 10px;margin-left: 10px;">
+                    <input type="submit" value="提交" style="margin-right: 10px;margin-left: 10px;height: 25px; width: 80px; background-color: rgba(243, 233, 202);">
+                </form>
+                <div id="height" style="width: 800px; height: 160px; margin: 10px auto 10px auto   "></div>
+                <div id="weight" style="width: 800px; height: 160px;  margin: 10px auto 10px auto"></div>
+
+                <div class="paging" style="margin-top: 30px;">
+                    <a href="" class="pageBtn">上一页</a>
+                    <a href="" class="a_number">1</a>
+                    <a href="" class="a_number">2</a>
+                    <a href="" class="select">3</a>
+                    <a href="" class="a_number">4</a>
+                    <a href="" class="a_number">5</a>
+                    <a href="" class="a_number">6</a>
+                    <a href="" class="a_number">7</a>
+                    <a href="" class="a_number">8</a>
+                    <a href="" class="a_number">9</a>
+                    <a href="" class="pageBtn">下一页</a>
+                </div>
+            </div>
+            <!-- 疫苗档案 -->
+            <div id="vaccineFile" v-show="isShowVaccine">
+                <div class="display_leave_title">
+                    <img src="image/疫苗.png" alt="" width="37px" height="37px" />
+                    <div class="display_leave_title_text">疫苗档案</div>
+                    <select style="margin-right: 20px">
+              <option value="2020-2021学年度第二学期">
+                2020-2021学年度第二学期
+              </option>
+              <option value="2020-2021学年度第一学期">
+                2020-2021学年度第一学期
+              </option>
+              <option value="2019-2020学年度第二学期">
+                2019-2020学年度第二学期
+              </option>
+              <option value="2019-2020学年度第一学期">
+                2019-2020学年度第一学期
+              </option>
+            </select>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: #bdc3c7"></div>
+                <form style="margin-top: 20px; margin-left: 50px;padding: 10px 10px 20px 20px;">
+                    疫苗名称:
+                    <input type="text" name="疫苗名称" value="" style="margin-right: 10px;margin-left: 10px;margin-bottom: 20px;"> 接种部位:
+                    <input type="text" name="接种部位" value="" style="margin-right: 10px;margin-left: 10px;margin-bottom: 20px;"> 接种部位:
+                    <input type="text" name="接种部位" value="" style="margin-right: 10px;margin-left: 10px;margin-bottom: 20px;"> 生产批号:
+                    <input type="text" name="生产批号" value="" style="margin-right: 10px;margin-left: 10px;margin-bottom: 20px;">
+                    <br> 生产厂家:
+                    <input type="text" name="生产厂家" value="" style="margin-right: 10px;margin-left: 10px;margin-bottom: 20px;"> 接种医院:
+                    <input type="text" name="接种医院" value="" style="margin-right: 10px;margin-left: 10px;margin-bottom: 20px;"> 负责人:
+                    <input type="text" name="负责人" value="" style="margin-right: 10px;margin-left: 10px;margin-bottom: 20px;">
+                    <input type="submit" value="提交" style="margin-right: 10px;margin-left: 10px;height: 25px; width: 80px; background-color: rgba(243, 233, 202);">
+                </form>
+                <div style="
+              width: 90%;
+              height: 1px;
+              background-color: #bdc3c7;
+              margin: 0 auto;
+            "></div>
+                <div style="width: 30%; height: 30%; background-color: white; border-radius: 10px 10px 10px 10px;box-shadow: 1px 1px 5px 1px rgba(176, 176, 176, 1); margin-left: 60px; margin-top: 20px; display: inline-block;">
+                    <div style="float: right; width: 60%; height: 100%;background-color: white; border-radius: 0px 10px 10px 0px;">
+                        <h4 style="margin-top: 10px;">接种位置</h4>
+                        <h4 style="margin-top: 10px;">接种医院</h4>
+                        <h4 style="margin-top: 10px;">接种人</h4>
+                        <h4 style="margin-top: 10px;">生产厂家</h4>
+                        <h4 style="margin-top: 10px;">生产批号</h4>
+                    </div>
+                    <h1 style="font-size: 14px; padding: 10px 0 10px 30px;">百白破疫苗</h1>
+                    <img style="width: 30%; height: 60%; padding: 0 0 0 15px;" src="image/百白破疫苗.jpg">
+                </div>
+                <div style="width: 30%; height: 30%; background-color: white; border-radius: 10px 10px 10px 10px;box-shadow: 1px 1px 5px 1px rgba(176, 176, 176, 1); margin-left: 60px; margin-top: 20px;display: inline-block;">
+                    <div style="float: right; width: 60%; height: 100%;background-color: white; border-radius: 0px 10px 10px 0px;">
+                        <h4 style="margin-top: 10px;">接种位置</h4>
+                        <h4 style="margin-top: 10px;">接种医院</h4>
+                        <h4 style="margin-top: 10px;">接种人</h4>
+                        <h4 style="margin-top: 10px;">生产厂家</h4>
+                        <h4 style="margin-top: 10px;">生产批号</h4>
+                    </div>
+                    <h1 style="font-size: 14px; padding: 10px 0 10px 30px;">百白破疫苗</h1>
+                    <img style="width: 30%; height: 60%; padding: 0 0 0 15px;" src="image/百白破疫苗.jpg">
+
+                </div>
+
+                <div class="paging" style="margin-top: 100px;">
+                    <a href="" class="pageBtn">上一页</a>
+                    <a href="" class="a_number">1</a>
+                    <a href="" class="a_number">2</a>
+                    <a href="" class="select">3</a>
+                    <a href="" class="a_number">4</a>
+                    <a href="" class="a_number">5</a>
+                    <a href="" class="a_number">6</a>
+                    <a href="" class="a_number">7</a>
+                    <a href="" class="a_number">8</a>
+                    <a href="" class="a_number">9</a>
+                    <a href="" class="pageBtn">下一页</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var content = new Vue({
+            el: "#content",
+            data: {
+                isShowVaccine: false,
+                isShowPhoto: false,
+                isShowRecord: true,
+                isShowHealth: false
+            },
+            methods: {
+                ShowVaccine: function() {
+                    this.isShowVaccine = true;
+                    this.isShowPhoto = false;
+                    this.isShowRecord = false;
+                    this.isShowHealth = false;
+                },
+                ShowPhoto: function() {
+                    this.isShowVaccine = false;
+                    this.isShowPhoto = true;
+                    this.isShowRecord = false;
+                    this.isShowHealth = false;
+                },
+                ShowRecord: function() {
+                    this.isShowVaccine = false;
+                    this.isShowPhoto = false;
+                    this.isShowRecord = true;
+                    this.isShowHealth = false;
+                },
+                ShowHealth: function() {
+                    this.isShowVaccine = false;
+                    this.isShowPhoto = false;
+                    this.isShowRecord = false;
+                    this.isShowHealth = true;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

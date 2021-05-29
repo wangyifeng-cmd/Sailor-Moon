@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>请假</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/AskForLeave_czm.css">
+
+    <script src="./js/publick.js"></script>
+    <script src="./js/AskForLeave_czm.js"></script>
+</head>
+
+<body>
+    <div id="special">
+        <div id="special_center">
+            <div id="special_l">
+                <a href="#" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Information</span>
+                        <br>
+                        <span class="special_body">公告</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Class Activities</span><br>
+                        <span class="special_body">班级活动</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Baby Record</span><br>
+                        <span class="special_body">宝宝记录</span>
+                    </div>
+                </a>
+                <a href="recipes_lxy2.html" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Recipes</span><br>
+                        <span class="special_body">食谱</span>
+                    </div>
+                </a>
+            </div>
+            <div id="special_r">
+                <a href="landing_wyf.html" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">landing</span>
+                        <br>
+                        <span class="special_body">登陆</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <a href="#" class="special_btn">Author event</a>
+                        <a href="#" class="special_btn">Kimono event</a>
+                        <br>
+                        <span style="line-height: 30px;">#作者美少女壮士</span>
+                    </div>
+                </a>
+                <a href="AskForLeave_czm.html" target="_blank">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Leave</span><br>
+                        <span class="special_body">请假</span>
+                    </div>
+                </a>
+                </a>
+                <a href="#">
+                    <div id="after">
+                        <a href="#" class="special_btn" style="color: white;background-color: black;">External</a>
+                        <span id="author">Copyright / © 2021美少女壮士 / All Rights Reserved.</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="add">
+        <span id="shu">|</span>
+        <span id="heng">|</span>
+    </div>
+    <div id="head">
+        <div id="img">
+            <a href="main_wyf.html"><img src="./image/logo1.png" alt="" id="logo"></a>
+        </div>
+        <ul id="ul">
+            <li><a href="#"><span><div class = "change"></div>关于我们</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>关于花园</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>入院信息</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>公告</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>常见问题</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>联系我们</span></a></li>
+            <li>
+                <div id="ren">
+                    <a href="./landing_wyf.html" id="landing" target="_blank">
+                        <svg id="account" viewBox="0 0 24 24">
+                            <path d="M0 22.032v1.968h24v-1.968c0-1.812-1.38-3.298-4.12-4.454-2.311-1.095-5.021-1.735-7.88-1.735s-5.569 0.64-7.994 1.784l0.114-0.048c-2.74 1.154-4.12 2.64-4.12 4.454v0zM18 6c0-0.024 0.001-0.053 0.001-0.082 0-3.359-2.723-6.082-6.082-6.082s-6.082 2.723-6.082 6.082c0 3.359 2.723 6.082 6.082 6.082 1.68 0 3.201-0.681 4.301-1.782l0-0c1.098-1.057 1.78-2.539 1.78-4.181 0-0.013-0-0.026-0-0.039v0.002z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 个人 -->
+    <div id="content">
+        <div class="imformation">
+            <div class="imformation_insert">
+                <div class="imformation_name">
+                    <img src="image/宝宝.png" alt="" width="35px" height="35px">
+                    <div style="margin-left: 15px; height: 100%; text-align: center; font-size: 24px; letter-spacing: 5px;  font-weight: bold; ">王译锋</div>
+                </div>
+                <div class="imformation_buttons">
+                    <div style="width: 80px;height: 100%;"></div>
+                    <img src="image/记录.png" alt="" height="28px" height="28px">
+
+                    <div id="leave_book" cursor:pointer>
+                        <input type="button" value="请假条" v-on:click="changeISShowBook" style="border: 0px; background-color: #fff; letter-spacing: 5px;">
+                    </div>
+                </div>
+
+                <div style="width: 70%; height: 1px;background-color: #bdc3c7;position: absolute;top: 100px; left: 50px;"></div>
+                <div class="imformation_buttons">
+                    <div style="width: 80px;height: 100%;"></div>
+                    <img src="image/添加 .png" alt="" height="28px" height="28px">
+                    <div id="leave_book" cursor:pointer>
+                        <input type="button" value="新建假条" v-on:click="changeISShowBook" style="border: 0px; background-color: #fff; letter-spacing: 5px;">
+                    </div>
+                </div>
+                <div style="width: 70%; height: 1px;background-color: #bdc3c7;position: absolute;top: 150px; left: 50px;"></div>
+                <!-- <div style="width: 100%; height: 1px;background-color: #bdc3c7;"></div> -->
+            </div>
+        </div>
+        <div class="newAskForLeave">
+            <!-- 新建请假条 -->
+            <div id="display_leave">
+
+                <div class="display_leave_title">
+
+                    <img src="image/时钟 .png" alt="" width="37px" height="37px">
+                    <div class="display_leave_title_text">
+                        新请假条
+                    </div>
+                </div>
+                <div style="width: 100%; height: 1px;background-color: #bdc3c7;"></div>
+                <div class="leave_date">
+                    <div class="leave_date_left">
+                        <div class="leave_date_left_text">请假开始时间：</div>
+                        <input class="leave_date_left_choss" type="datetime-local" step="01" name="user_date" />
+                        <div id="wyf_empty"></div>
+                        <div class="leave_date_left_text">请假开始时间：</div>
+                        <input class="leave_date_left_choss" type="datetime-local" step="01" name="user_date" />
+                    </div>
+                </div>
+                <div class="leave_reason">
+                    <div>请假原因：</div>
+                    <textarea name="reason" id="reason" cols="30" rows="10" style="width: 500px; height: 100%;border-radius: 10px; border: 1px #bdc3c7 solid; font-size: 16px;"></textarea>
+
+                </div>
+                <div class="leave_photo">
+                    <div>图片备注：</div>
+                    <button style="width: 250px; height: 150px; background-color: #e5e5e5; font-size: 30px; border: 1px #bdc3c7 solid; border-radius: 5px ;">+</button>
+                </div>
+                <!-- <button style="width: 96px; height: 26px;border: none; background-color: #f3e9ca ;font-size: 14px; position: absolute; top: 500px; left: 730px;border-radius: 5px;">提交</button> -->
+                <input type="button" value="提交" onclick="popupWindow()" style="width: 96px; height: 26px;border: none; background-color: #f3e9ca ;font-size: 14px; position: absolute; top: 500px; left: 730px;border-radius: 5px;">
+            </div>
+            <!-- 查看请假本 -->
+            <div id="display_book" v-show="isShow">
+                <div class="display_leave_title">
+                    <img src="image/本.png" alt="" width="37px" height="37px">
+                    <div class="display_leave_title_text">
+                        请假本
+                    </div>
+                </div>
+                <div style="width: 100%; height: 1px;background-color: #bdc3c7;"></div>
+                <div class="leave_display">
+                    <div class="leave_display_text">
+                        请假条
+                    </div>
+                    <p class="levae_reason_text">请假去银行贷款给王校长建豪华幼儿园。</p>
+                    <div class="leave_date_display">
+                        2021.05.10 11:30:34 - 2021.05.10 14:00:00
+                    </div>
+                </div>
+                <div class="leave_display">
+                    <div class="leave_display_text">
+                        请假条
+                    </div>
+                    <p class="levae_reason_text">请假去银行贷款给王校长建豪华幼儿园。</p>
+                    <div class="leave_date_display">
+                        2021.05.10 11:30:34 - 2021.05.10 14:00:00
+                    </div>
+                </div>
+                <div class="paging">
+                    <a href="" class="pageBtn">上一页</a>
+                    <a href="" class="a_number">1</a>
+                    <a href="" class="a_number">2</a>
+                    <a href="" class="select">3</a>
+                    <a href="" class="a_number">4</a>
+                    <a href="" class="a_number">5</a>
+                    <a href="" class="a_number">6</a>
+                    <a href="" class="a_number">7</a>
+                    <a href="" class="a_number">8</a>
+                    <a href="" class="a_number">9</a>
+                    <a href="" class="pageBtn">下一页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        var content = new Vue({
+            el: "#content",
+            data: {
+                isShow: true
+            },
+            methods: {
+                changeISShowBook: function() {
+                    // this.isShowBook=!this.isShowBook;
+                    this.isShow = !this.isShow;
+                    // print(PP.isShow);
+                }
+            }
+        })
+
+        function popupWindow() {
+            alert("提交成功");
+        }
+    </script>
+    <!-- <div id="conrol"> -->
+</body>
+
+</html>
