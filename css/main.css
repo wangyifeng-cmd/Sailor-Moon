@@ -428,6 +428,12 @@
     right: 0px;
     top: 104px;
     width: 80%;
+    height: 644px;
+}
+
+#pic ul {
+    width: 100%;
+    height: 100%;
 }
 
 #pic ul li {
@@ -782,7 +788,7 @@
 #event_list_width {
     position: relative;
     left: -70px;
-    width: 1424px;
+    width: 100vw;
     overflow: hidden;
 }
 

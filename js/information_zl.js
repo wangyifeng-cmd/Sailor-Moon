@@ -5,7 +5,6 @@ window.onload = function() {
     var special = wyf$("special");
     var event = wyf$("event");
     var k = 0;
-    var content = wyf$("content");
     // setInterval(function() {
     //     console.log(window.pageYOffset);
     // }, 1000);
@@ -17,14 +16,12 @@ window.onload = function() {
                 special.style.display = "block";
                 var block = setInterval(block, 100);
                 k = 1;
-                add.style.color = "black";
             } else {
                 shu.style.transform = "translate(0px, -0.2px) translate(0, -1.2px)";
                 heng.style.transform = "translate(1.5px, 0.3px) rotate(90deg)";
                 special.style.opacity = "0";
                 var none = setInterval(none, 100);
                 k = 0;
-                add.style.color = "#fff";
             }
 
             function block() {
@@ -61,38 +58,26 @@ window.onload = function() {
         }
     }
     //head的演示显示和隐藏
-    // var head = wyf$("head");
-    // var logo = wyf$("logo");
-    // setInterval(color, 100);
+    var head = wyf$("head");
+    var logo = wyf$("logo");
+    setInterval(color, 100);
 
-    // function color() { //触发滚轮事件
-    //     if (window.pageYOffset > 10) {
-    //         head.style.height = 75 + "px";
-    //         add.style.top = 22 + "px";
-    //         head.style.backgroundColor = "#ffffff";
-    //     } else {
-    //         head.style.height = 104 + "px";
-    //         add.style.top = 37 + "px";
-    //         head.style.backgroundColor = "#FBF8F2";
-    //     }
-    // }
+    function color() { //触发滚轮事件
+        if (window.pageYOffset > 10) {
+            head.style.height = 75 + "px";
+            add.style.top = 22 + "px";
+            head.style.backgroundColor = "#ffffff";
+        } else {
+            head.style.height = 104 + "px";
+            add.style.top = 37 + "px";
+            head.style.backgroundColor = "#FBF8F2";
+        }
+    }
     //相机定格字的延时
     setInterval(function() {
         wyf$("head").style.opacity = 1;
         wyf$("head").style.top = 0 + "px";
-        content.style.opacity = 1;
     }, 500);
-    //填写框的阴影
-    var center = wyf$("center");
-    var shadowObjs = center.getElementsByClassName("kuang");
-    // console.log(shadowObjs);
-    for (let i = 0; i < shadowObjs.length; i++) {
-        shadowObjs[i].onfocus = function() {
-            this.style.boxShadow = "0 0 0 3px #B3D1F3";
-        }
-        shadowObjs[i].onblur = function() {
-            this.style.boxShadow = "";
-        }
-    }
-
 }
+
+

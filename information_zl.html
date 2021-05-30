@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幼儿园</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/information_zl.css">
+
+    <script src="./js/publick.js"></script>
+    <script src="./js/information_zl.js"></script>
+</head>
+
+<body>
+    <div id="special">
+        <div id="special_center">
+            <div id="special_l">
+                <a href="#">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Information</span>
+                        <br>
+                        <span class="special_body">公告</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Class Activities</span><br>
+                        <span class="special_body">班级活动</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Baby Record</span><br>
+                        <span class="special_body">宝宝记录</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Recipes</span><br>
+                        <span class="special_body">食谱</span>
+                    </div>
+                </a>
+            </div>
+            <div id="special_r">
+                <a href="#">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">landing</span>
+                        <br>
+                        <span class="special_body">登陆</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <a href="#" class="special_btn">Author event</a>
+                        <a href="#" class="special_btn">Kimono event</a>
+                        <br>
+                        <span style="line-height: 30px;">#作者美少女壮士</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="special_div">
+                        <div class="before"></div>
+                        <span class="special_head">Leave</span><br>
+                        <span class="special_body">请假</span>
+                    </div>
+                </a>
+                </a>
+                <a href="#">
+                    <div id="after">
+                        <a href="#" class="special_btn" style="color: white;background-color: black;">External</a>
+                        <span id="author">Copyright / © 2021美少女壮士 / All Rights Reserved.</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="add">
+        <span id="shu">|</span>
+        <span id="heng">|</span>
+    </div>
+    <div id="head">
+        <div id="img"><img src="./image/logo1.png" alt="" id="logo"></div>
+        <ul id="ul">
+            <li><a href="#"><span><div class = "change"></div>关于我们</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>关于花园</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>入院信息</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>公告</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>常见问题</span></a></li>
+            <li><a href="#"><span><div class = "change"></div>联系我们</span></a></li>
+            <li>
+                <div id="ren">
+                    <a href="./landing_wyf.html" id="landing">
+                        <svg id="account" viewBox="0 0 24 24">
+                            <path d="M0 22.032v1.968h24v-1.968c0-1.812-1.38-3.298-4.12-4.454-2.311-1.095-5.021-1.735-7.88-1.735s-5.569 0.64-7.994 1.784l0.114-0.048c-2.74 1.154-4.12 2.64-4.12 4.454v0zM18 6c0-0.024 0.001-0.053 0.001-0.082 0-3.359-2.723-6.082-6.082-6.082s-6.082 2.723-6.082 6.082c0 3.359 2.723 6.082 6.082 6.082 1.68 0 3.201-0.681 4.301-1.782l0-0c1.098-1.057 1.78-2.539 1.78-4.181 0-0.013-0-0.026-0-0.039v0.002z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-top: 100px;width: 100%; height: 1000px;padding-top: 100px;">
+
+        <div style="height: 25px; width: 100px; margin-left: 50px;font-size: 15px;">首页 > 公告栏</div>
+
+        <style>
+            /*--预设--*/
+            
+            body {
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            #lyrow,
+            #lyrow input,
+            #lyrow textarea {
+                font-size: 12px;
+                font-family: 'Microsoft YaHei', '微软雅黑', MicrosoftJhengHei, '华文细黑', STHeiti, MingLiu;
+            }
+            
+            #lyrow {
+                height: 100vh;
+                width: 100vw;
+            }
+            
+            #lyrow div {
+                min-height: 18px;
+            }
+            
+            #lyrow input,
+            #lyrow textarea {
+                border: rgb(235, 235, 235) 1px solid;
+                border-radius: 3px;
+                padding: 5px 8px;
+                outline: 0;
+            }
+            
+            #lyrow input:hover,
+            #lyrow textarea:hover {
+                border: 1px solid #6bc1f2;
+            }
+            /*--编辑--*/
+            
+            #lyrow .home {
+                top: 394px;
+                margin: 50px 0 0 50px;
+                height: 30px !important;
+                border: rgb(255, 255, 255, 1) solid 1px;
+            }
+            
+            #lyrow .span {}
+            
+            #lyrow .font {}
+            
+            #lyrow .text {
+                font-size: 20px;
+                position: static;
+                vertical-align: middle;
+                height: 28px !important;
+                border: rgb(255, 255, 255, 1) solid 1px;
+                width: 126px !important;
+            }
+            
+            #lyrow .hometwo {
+                border: rgba(250, 244, 230) solid 1px;
+                width: 1300px !important;
+                margin: 50px 0 0 50px;
+                height: 30px !important;
+            }
+            
+            #lyrow .div {
+                border: rgba(250, 244, 230) solid 1px;
+                margin: 30px 0 0 50px;
+                width: 1300px !important;
+                height: 5000px !important;
+            }
+            
+            #lyrow .divtop {
+                border: rgb(250, 244, 230) solid 1px;
+                width: 1240px !important;
+                margin: 30px 0 0 30px;
+                height: 600px !important;
+            }
+            
+            #lyrow .divtwo {
+                border: rgb(255, 0, 0) solid 1px;
+                margin: 30px 0 0 30px;
+                width: 1240px !important;
+                height: 600px !important;
+            }
+            
+            #lyrow .divinin {
+                border: rgb(198, 218, 202) solid 1px;
+                width: 500px !important;
+                height: 30px !important;
+                top: 20;
+                float: right;
+            }
+            
+            #lyrow .divininbottom {
+                width: 500px !important;
+                height: 566px !important;
+                margin: 0 0 0 0px;
+                float: right;
+            }
+            
+            #lyrow .lefttext {
+                height: 20px !important;
+                width: 80px !important;
+                margin: 5px 0 0 10px;
+            }
+            
+            #lyrow .righttext {
+                width: 80px !important;
+                height: 20px !important;
+                float: right;
+                margin: 5px 10px 0 0;
+            }
+            
+            #lyrow .catalog {
+                height: 1000px !important;
+                background-color: rgba(250, 244, 230);
+                position: absolute;
+                left: 1450px;
+                width: 250px !important;
+                top: 350px;
+            }
+            
+            #lyrow .search {
+                width: 250px !important;
+                background-color: rgba(255, 255, 255, 1);
+                position: absolute;
+                left: 1450px;
+                height: 50px !important;
+                top: 270px;
+                border: rgba(250, 244, 230) solid 1px;
+            }
+            
+            #lyrow .searchphoto {
+                background-color: rgba(250, 244, 230, 1);
+            }
+            
+            #lyrow .searphoto {}
+            
+            #lyrow .photodiv {
+                background-color: rgba(250, 244, 230, 1;
+                height: 50px !important;
+                width: 50px !important;
+            }
+            
+            #lyrow .searchtext {
+                width: 80px !important;
+                height: 50px !important;
+                background-color: #6bc1f2;
+                display: inline-block;
+                margin-left: 10px;
+            }
+        </style>
+
+
+        <div id="lyrow">
+
+
+            <div class="hometwo">
+                <div class="righttext">查看更多 > </div>
+                <div class="lefttext">系统公告</div>
+            </div>
+            <div class="div">
+
+                <div class="divtop">
+                    <img src="image\饮茶哥.png" alt="" height="600px" width="700px">
+
+
+
+                    <div class="divininbottom">
+                        <div style=" width:500px !important;height:35px !important;margin:0 0 0 0px;float: right;padding-top: 7px; border-bottom: rgba(171, 171, 171, 1) solid 1px !important;">
+                            <div style="width: 100px;height: 25px;display: inline-block;margin-left: 10px;font-size: large;">2021.5.27</div>
+                            <div style="width: 100px;height: 25px;display: inline-block;margin-left: 280px;font-size: large;">饮茶日记</div>
+                        </div>
+                        <p style="font-size: 30px;">喂！三点几了，做，做撚啊做。 翻译： 喂！三点多啦，工作，工作个jb工作。 原文： 三点几了，饮茶先啦，做甘多都冇用嘅，老细唔锡你嘅嚟。</p>
+
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="divtop">
+                    <img src="image\公告图片.jpg" alt="" height="600px" width="700px">
+
+
+
+                    <div class="divininbottom">
+                        <div style=" width:500px !important;height:35px !important;margin:0 0 0 0px;float: right;padding-top: 7px; border-bottom: rgba(171, 171, 171, 1) solid 1px !important;">
+                            <div style="width: 100px;height: 25px;display: inline-block;margin-left: 10px;font-size: large;">2021.5.27</div>
+                            <div style="width: 100px;height: 25px;display: inline-block;margin-left: 280px;font-size: large;">打工日记</div>
+                        </div>
+                        <p style="font-size: 30px;">今天是一月十六日，星期六，我正在厂里加班。我已经十五天没有休假了，明天，我还将加班。</p>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="catalog">
+                    <ul>
+                        <li style="font-size: 15px;margin-left: 10px;margin-bottom: 20px;">· 幼儿园为加强水痘传染的紧急通知</li>
+                        <li style="font-size: 15px;margin-left: 10px;margin-bottom: 20px;">· 关于五一放假的通知</li>
+                        <li style="font-size: 15px;margin-left: 10px;margin-bottom: 20px;">· 2011——2010学年第二学期新学期寄语</li>
+                        <li style="font-size: 15px;margin-left: 10px;margin-bottom: 20px;">· 关于幼儿注册报名的通知</li>
+                        <li style="font-size: 15px;margin-left: 10px;margin-bottom: 20px;">· 关于春节放假的通知</li>
+                        <li style="font-size: 15px;margin-left: 10px;margin-bottom: 20px;">· 关于“六一”儿童节的通知</li>
+                        <li style="font-size: 15px;margin-left: 10px;margin-bottom: 20px;">· 关于五一放假的通知</li>
+                        <li style="font-size: 15px;margin-left: 10px;margin-bottom: 20px;">· 新学期注册报名及端午节放假通知</li>
+                    </ul>
+                </div>
+
+                <div class="search">
+                    <img src="image\搜索.png" alt="" height="50px" width="50px;display: inline-block;">
+                    <h3 style="display: inline-block;margin-left: 10px;position: absolute;left: 50px;
+        top: 15px;">搜索公告信息</h3>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
